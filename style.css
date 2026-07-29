@@ -1,0 +1,370 @@
+/* ===========================
+   Google Font
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    color:#222;
+    line-height:1.6;
+}
+
+/* ===========================
+   Navbar
+=========================== */
+
+header{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+    background:#fff;
+    box-shadow:0 3px 15px rgba(0,0,0,.08);
+}
+
+.navbar{
+    width:90%;
+    margin:auto;
+    height:75px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:700;
+}
+
+.logo span{
+    color:#0d6efd;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:30px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#222;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#0d6efd;
+}
+
+.menu-btn{
+    display:none;
+    font-size:28px;
+    cursor:pointer;
+}
+
+/* ===========================
+   Home
+=========================== */
+
+.home{
+    width:90%;
+    margin:auto;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:50px;
+    padding-top:90px;
+}
+
+.home-content{
+    flex:1;
+}
+
+.home-content h3{
+    color:#0d6efd;
+    font-size:24px;
+}
+
+.home-content h1{
+    font-size:60px;
+    margin:10px 0;
+}
+
+.home-content h2{
+    color:#555;
+    margin-bottom:20px;
+}
+
+.home-content p{
+    max-width:600px;
+    margin-bottom:30px;
+}
+
+.buttons{
+    display:flex;
+    gap:20px;
+    margin-bottom:30px;
+}
+
+.btn{
+    background:#0d6efd;
+    color:#fff;
+    text-decoration:none;
+    padding:14px 32px;
+    border-radius:50px;
+    transition:.4s;
+    display:inline-block;
+}
+
+.btn:hover{
+    background:#084298;
+    transform:translateY(-3px);
+}
+
+.btn2{
+    background:#222;
+}
+
+.home-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.home-image img{
+    width:360px;
+    height:360px;
+    border-radius:50%;
+    object-fit:cover;
+    border:8px solid #0d6efd;
+    box-shadow:0 20px 50px rgba(0,0,0,.2);
+}
+
+.social-icons{
+    display:flex;
+    gap:18px;
+}
+
+.social-icons a{
+    width:45px;
+    height:45px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#fff;
+    border-radius:50%;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    color:#0d6efd;
+    text-decoration:none;
+    transition:.4s;
+}
+
+.social-icons a:hover{
+    transform:translateY(-6px);
+}
+
+/* ===========================
+ Sections
+=========================== */
+
+section{
+    width:90%;
+    margin:100px auto;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.title h2{
+    font-size:40px;
+    color:#0d6efd;
+}
+
+/* ===========================
+ About
+=========================== */
+
+.about-content{
+    background:#fff;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+/* ===========================
+ Skills
+=========================== */
+
+.skill-box{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.skill{
+    background:#fff;
+    padding:25px;
+    text-align:center;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.skill:hover{
+    background:#0d6efd;
+    color:#fff;
+    transform:translateY(-8px);
+}
+
+/* ===========================
+ Experience
+=========================== */
+
+.card{
+    background:#fff;
+    margin-bottom:30px;
+    padding:30px;
+    border-left:6px solid #0d6efd;
+    border-radius:10px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+/* ===========================
+ Projects
+=========================== */
+
+.project-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.project-card{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+}
+
+.project-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.project-card h3{
+    padding:20px 20px 10px;
+}
+
+.project-card p{
+    padding:0 20px 25px;
+}
+
+/* ===========================
+ Education
+=========================== */
+
+.edu-box{
+    background:#fff;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+/* ===========================
+ Contact
+=========================== */
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+input,
+textarea{
+    padding:16px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+}
+
+textarea{
+    resize:none;
+    height:180px;
+}
+
+button{
+    border:none;
+    cursor:pointer;
+}
+
+/* ===========================
+ Footer
+=========================== */
+
+footer{
+    background:#111;
+    color:#fff;
+    text-align:center;
+    padding:25px;
+}
+
+/* ===========================
+ Responsive
+=========================== */
+
+@media(max-width:992px){
+
+.home{
+    flex-direction:column-reverse;
+    text-align:center;
+}
+
+.home-content h1{
+    font-size:42px;
+}
+
+.home-image img{
+    width:280px;
+    height:280px;
+}
+
+.nav-links{
+    display:none;
+}
+
+.menu-btn{
+    display:block;
+}
+
+.buttons{
+    justify-content:center;
+}
+
+.social-icons{
+    justify-content:center;
+}
+
+}
